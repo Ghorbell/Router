@@ -1,0 +1,158 @@
+*{box-sizing: border-box;}
+.App {
+  text-align: center;
+  background-color: #1d3557;
+  margin:0;
+}
+
+.Nav{
+    display: flex;
+    justify-content:space-between;
+    align-items: center ;
+    flex-wrap: wrap;
+    background-color: #f1faee;
+    padding:0 20px;
+}
+.Nav h1{
+  color: black;
+  font-weight: 500;
+  font-size: 50px;
+}
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.search-container input{
+  border-radius: 4px;
+  background-color: transparent;
+  color: black;
+  font-size: large;
+  size: 10px;
+  width: 300px;
+  margin-right: 30px;
+  border: none;
+  border-bottom: 2px solid rgb(224, 216, 216);
+}
+.search-container input[type=text]:focus {
+  border: 3px solid rgb(224, 216, 216);
+}
+.main{
+  margin: 5px 10px;
+  min-height: 550px;
+}
+.movie-list{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    /* margin-left: 10%;
+    margin-right: 10%; */
+    margin-top: 5%;
+    
+} 
+.card{
+    margin-top: 2%;
+    margin-bottom: 10%;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 0 4px rgba(0,0,0,0.4);
+    flex: 0 0 100%;
+    height: 500px;
+    background-color:#454f9d!important; 
+    
+    border-radius: 0px!important;
+    border-top-left-radius: 5px!important;
+    border-top-right-radius: 5px!important;
+    color: white;
+    border: hidden!important;
+}
+.titles{
+  margin: 0!important;
+  position: relative;
+text-align: left;
+}
+.overview{
+  color: black;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left:0;
+  background-color: white;
+  transform: translateY(100%);
+  transition: transform 0.3s ease-in-out ;
+  padding: 15px;
+  overflow: auto;
+  max-height: 100%;
+}
+.card:hover .overview {
+  transform: translateY(0);
+}
+h1{
+  color: red;
+}
+.AddMovie{
+  display: flex;
+  justify-content: left;
+  background-color: #454f9d;
+  flex-direction: column;
+  /* border-top: 3px solid #457b9d;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px; */
+  margin-top: 5px;
+ 
+}
+
+.AddMovie label{
+  font-size: 20px;
+  margin: 10px;
+}
+.AddMovie input{
+  width: 40%;
+  border-radius: 3px;
+  margin:10px 3px
+}
+span:hover{
+  cursor: pointer;
+}
+.span{
+/* background-color: royalblue; */
+  padding: 8px;
+  border-radius:50% ;
+  font-weight: bold;
+ position: absolute;     right: .5rem;
+    top: .5rem; 
+    display: block;
+    box-shadow:0px 0px 5px 3px rgba(0, 0, 0, 0.349);
+    width: 40px;
+    height:40px;
+}
+.green{
+  background-color:#00FF00 ;
+  color:white ;
+}
+.orange{
+  background-color: #FFA500	;
+  color:white ;
+
+}
+.red{
+  background-color: rgb(133, 0, 0);
+  color:white ;
+
+}
+.date{
+  margin: 0;
+  font-size: 18px;
+}
+.bot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.moviedetail{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
